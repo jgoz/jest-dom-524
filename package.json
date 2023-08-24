@@ -1,0 +1,26 @@
+{
+  "name": "jest-dom-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@adobe/css-tools": "4.0.x",
+    "@testing-library/jest-dom": "^6.1.1",
+    "@types/jest": "^29.5.3",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {},
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup.mjs"
+    ]
+  }
+}
